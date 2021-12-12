@@ -4,22 +4,31 @@ Ensures that only one instance of the class exists in the JVM.
 Make sure the singleton class must provide a global access
 point to get the instance.
 
-* Eager initialization
-* Static block initialization
-* lazy initialization
-* Thread safe Singleton
-* Bill Pugh Singleton Implementation
-* Using Reflection to destroy Singleton pattern
-* Enum Singleton
-* Using clone to destroy/prevent Singleton pattern
-* Using serialization destroy/prevent Singleton
-* Example of Singleton within JDK
+-   Eager initialization
+-   Static block initialization
+-   lazy initialization
+-   Thread safe Singleton
+-   Bill Pugh Singleton Implementation
+-   Using Reflection to destroy Singleton pattern
+-   Enum Singleton
+-   Using clone to destroy/prevent Singleton pattern
+-   Using serialization destroy/prevent Singleton
+-   Example of Singleton within JDK
 
 Steps to create Singleton Pattern:
-    Create private constructor to restric instantiation of the
-    class from other classes.
-    Create private static variable of the same class that is
-    the only instance of the class.
-    Create public static method that returns the instance of
-    the class and this is the global acess point for outer world
-    to get the instance of the singleton class.
+Create private constructor to restric instantiation of the
+class from other classes.
+Create private static variable of the same class that is
+the only instance of the class.
+Create public static method that returns the instance of
+the class and this is the global acess point for outer world
+to get the instance of the singleton class.
+
+Some example for Singleton in the JDK:
+
+-   Runtime class (Eager loading)
+-   Desktop class (Thread safa implementation)
+-   System class (Eager initialization with static block)
+
+*   Loggin
+*   Caching

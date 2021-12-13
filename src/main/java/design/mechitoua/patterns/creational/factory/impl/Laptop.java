@@ -2,14 +2,14 @@ package design.mechitoua.patterns.creational.factory.impl;
 
 import design.mechitoua.patterns.creational.factory.Computer;
 
-public class PC implements Computer {
+public class Laptop implements Computer {
     private String ram;
     private String hdd;
     private String cpu;
     private boolean isGraphicsCardEnabled;
     private boolean isBluetoothEnabled;
 
-    public PC(String ram, String hdd, String cpu, boolean isGraphicsCardEnabled, boolean isBluetoothEnabled) {
+    public Laptop(String ram, String hdd, String cpu, boolean isGraphicsCardEnabled, boolean isBluetoothEnabled) {
         this.ram = ram;
         this.hdd = hdd;
         this.cpu = cpu;
@@ -45,7 +45,7 @@ public class PC implements Computer {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("PC [cpu=");
+        builder.append("Laptop [cpu=");
         builder.append(cpu);
         builder.append(", hdd=");
         builder.append(hdd);

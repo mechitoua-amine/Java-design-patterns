@@ -3,5 +3,22 @@ The factory design pattern is used when we have a super class with multiple
 sub-classes and based on input, we need to return one of the sub-classes
 object.
 
-This pattern takes out the responsibility of the instantiation of a class
-from the client prgram to the facoty class.
+This pattern takes out the responsibility of the instantiation of a class from the client prgram to the facoty class.
+
+Factory design pattern advantages
+    * Factory pattern is a way to code for interfaces rather than implementation
+    * Facotry pattern removes the instantiation of actual implementation classes
+        from client code to factory class
+    * Facotry pattern makes out code more robut, less coupled and easy to extend
+        so we can eazily change base class implementation because client program
+        is unaware of this.
+
+Facotry design pattern examples in JDK
+    * java.util.Calendar and java.text.NumberFromat getinstance() method
+    * java.util.ResourceBundle getBundle() method
+    * java.nio.charset.Charset forName() method
+    * java.util.EnumSet of() method
+    * java.sql.DriverManager getConnection() method
+    * java.net.URL openConnection() method
+    * java.lang.Class newInstance method
+    * java.lang.Class forName() method

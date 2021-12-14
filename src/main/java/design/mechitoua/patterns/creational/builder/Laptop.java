@@ -65,4 +65,21 @@ public class Laptop {
         return isBluetoothEnabled;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Laptop [cpu=");
+        builder.append(", ram=");
+        builder.append(ram);
+        builder.append(cpu);
+        builder.append(", hdd=");
+        builder.append(hdd);
+        builder.append(", isGraphicsCardEnabled=");
+        builder.append(isGraphicsCardEnabled);
+        builder.append(", isBluetoothEnabled=");
+        builder.append(isBluetoothEnabled);
+        builder.append("]");
+        return builder.toString();
+    }
+
 }

@@ -13,3 +13,13 @@ when the object contains alot of attributes:
         sent as Null or default value.
     3- If the object is very heavy and object creation is complex, then all
         that complexity will be part of factory classes that is confusing.
+
+Builder Design Pattern examples in JDK:
+    * java.lang.StringBuilder append() method
+    * java.lang.StringBuffer append() method (thread-safe)
+    * All implementaions of java.lang.Appendable(BufferedWriter, CharArrayWriter, FileWriter,
+      OutputStreamWriter, PipedWriter, PrintStream, PrintWriter, StringWriter, Writer) are
+      infact good examples of Builder Pattern in java.
+    * java.nio.ByteBuffer put() method (also on CharBuffer, ShorBuffer, IntBuffer, LongBuffer,
+      FloatBuffer, DoubleBuffer)
+    * java.uril.stream.Stream.Builder

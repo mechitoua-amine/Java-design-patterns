@@ -1,0 +1,12 @@
+# Prototype Design Pattern:
+
+The Prototype Design Pattern is used when the object creation is costly and requires
+alot of time and resources and you have similar object already existing.
+
+Prototype pattern provides a mechanism to copy the original object to a new object
+and then modify it according to our needs. Prototype design pattern uses java cloning
+to copy the object.
+
+## Prototype desing pattern examples in JDK:
+
+java.lang.Object clone() method (the class has to implement java.lang.Clonable)

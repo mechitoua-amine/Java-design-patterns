@@ -1,0 +1,10 @@
+# Abstract Factory Design Pattern:
+
+Abstract Factory Pattern is almost similar to Factory Pattern except the fact
+that its more like facoty of factories (more generic)
+
+Abstract Factory Pattern is considered another layer of abstraction over Factory
+Pattern.
+
+Whenever you need another level of abstraction over a group of factories, you
+should consider using the abstract factory pattern.

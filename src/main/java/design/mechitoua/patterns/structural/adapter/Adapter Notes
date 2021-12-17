@@ -3,3 +3,9 @@
 * Adapter Design Pattern is one of the structural design patterns,
 it is used to wrap the incompatible interface of one class with the
 compatible interface of another class.
+
+## Adapter Design Pattern examples in JDK:
+    - java.util.Arrays#asList()
+    - java.io.InputStreamReader(InputStream)
+    - java.io.OutputStreamWriter(OutputStream)
+    - javax.xml.bind.annotation.adapters.XmlAdapter#marshal() and #unmarshal()

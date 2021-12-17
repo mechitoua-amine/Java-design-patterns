@@ -8,3 +8,8 @@ Pattern.
 
 Whenever you need another level of abstraction over a group of factories, you
 should consider using the abstract factory pattern.
+
+## Abstract Factory Design Pattern exampes in JDK:
+    - java.xml.parsers.DocumentBuilderFactory newInstance() method
+    - java.xml.transform.TransformerFactory newInstance() method
+    - javax.xml.xpath.XPathFactory newInstance() method

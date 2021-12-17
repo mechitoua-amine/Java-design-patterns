@@ -1,0 +1,5 @@
+# Adapter Design Pattern:
+
+* Adapter Design Pattern is one of the structural design patterns,
+it is used to wrap the incompatible interface of one class with the
+compatible interface of another class.

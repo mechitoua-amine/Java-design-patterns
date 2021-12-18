@@ -1,0 +1,18 @@
+# Proxy Design Pattern
+The Proxy pattern is used to provide a surrogate or placeholder object,
+which references a real object. The pattern allows to defer instantiation
+of an object until it is needed. This is useful when the lifetime of an
+object isn't predictable or can't be managed.
+
+the proxy pattern allows us to create an intermediary that acts as an
+interface to another resource and also hiding the underlying complexity
+of the componenet.
+
+Proxy means "in place of", 'representing' or 'on behalf of' are literal
+meanings of proxy and that directly explains the name of the pattern.
+
+Consider a heavy java Object (like a JDBC connection or a SessionFactory)
+that requires some initial configuration
+
+We only want such objects to be created when they are needed, and once
+thay are we'd want to reuse them for all calls.

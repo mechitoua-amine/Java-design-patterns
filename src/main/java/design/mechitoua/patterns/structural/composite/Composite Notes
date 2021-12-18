@@ -1,0 +1,29 @@
+# Composite Design Pattern:
+J
+definition of Composite Design Pattern: it is a design pattern that allows us
+to treat a group of objects in the same way as a single object. The intent of
+the pattern is to encapsulate the individual objects and provide a unified
+interface to access them.
+Composite Pattern is used when we have to represent a part-out of a whole
+hierarchy.
+
+we can break down the pattern into following parts:
+1. component:
+    is the base interface for all objects in the composite pattern. it should
+    be either an interface or an abstract class with the common methods to
+    manage the child composites.
+
+2. leaf:
+    implements the default behavior of the base component. it doesn't contain
+    a reference to the other objects.
+
+3. composite:
+    it has leaf elements. it implements the base component methods and defines
+    the child-related operations.
+
+4. client:
+    it has acess to the composition elements by using the base component object
+
+Composite Examples in JDK:
+    - java.awt.Container#add(Component) [Swing]
+    - java.faces.component.UIComponentBase#getChildren() [JSF]

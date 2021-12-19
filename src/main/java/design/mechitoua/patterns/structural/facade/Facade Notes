@@ -1,0 +1,26 @@
+# Facade Design Pattern:
+
+This pattern is used to help client applications to easily access
+the system components and interact with them.
+
+This pattern provides a unified interface to a set of interfaces
+in a subsystem or system. Facade pattern defines a higher-level
+interface that makes the sybsystem easier to use.
+
+# Key points:
+
+    - Facade design pattern is more like a helper for client applications
+      , it doesn't hide subsystem interfaces from the client. Whether to
+        use facade or not is completely dependent on the client.
+    - Facade pattern can be applied at any point of development, usually
+        when the number of interfaces grow and the system gets complex.
+    - Subsytem interfaces are not aware of Facade and they shouldn't have
+      any reference of the facade interface.
+    - Facade pattern should be applied for similar kind of interfaces, its
+      purpose is to provide a single interface rather than multiple interfaces
+      that does the similar kind of jobs.
+
+# Facade Desing pattern in JDK:
+
+-   javax.faces.context.FacesContex
+-   javax.faces.context.ExternalContex

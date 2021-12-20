@@ -1,0 +1,20 @@
+# Decorator design pattern:
+
+Decorator is a pattern used to modify the functionlityof an object at runtime.
+At the same time other instances of the same class will not be affected by this
+so individual objects gets the modified behaviour.
+
+This pattern provies a wrapper to the existing class.
+Decorator pattern uses abstract classes or interfaces with the composition
+to implement the wrapper.
+
+Decorator pattern is helpful in providing runtime modification abilities and
+hence more flexibility. Its easy to maintain and extend when the number of
+choices increases.
+
+# Example of Decorator design pattern in JDK:
+
+-   Decorator pattern is used alot in java IO packages, such as FileReader,
+    BufferedReader, FileWriter, BufferedWriter, bufferedInputStream, etc.
+-   java.util.Collections (synchronized xxxx() and unmodifiable xxxx() methods)
+-   java.servlet.http.HttpServletRequestWrapper and HttpServletResponseWrapper.

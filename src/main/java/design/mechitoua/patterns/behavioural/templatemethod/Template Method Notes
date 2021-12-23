@@ -1,0 +1,37 @@
+# Template Method Design Pattern:
+
+Template Method Design Pattern is a behavioral design pattern that defines
+the skeleton of an algorithm in the superclass but lets subclasses override
+specific steps of the algorithm without changing its structure.
+
+Template Method pattern should consist of certain steps whose order is fixed
+methods, implementation differs from base class subclass. If we want some
+of methods should not be overriden by sub classes then we make those Template
+methods as final.
+
+# Use Case:
+
+Let us take an example of Pizza Store. The making of Pizza includes the steps
+such as:
+
+-   Making bread
+-   Adding ingredients
+-   Cooking
+-   Adding cheese
+-   Adding toppings
+
+All theses steps are in sequetial order.
+
+## Examples in the JDK & Frameworks:
+
+-   All non-abstract methods of java.io.InputStream, java.io.outputStream
+    , java.io.Reader, java.io.Writer are Template Methods.
+-   All non-abstract methods of java.util.AbstractList, java.util.AbstractSet,
+    java.util.AbstractMap, java.util.AbstractCollection are Template Methods.
+-   javax.servlet.http.HttpServlet all the doXXX() methods by default send an
+    HTTP 405 "Method Not Allowed" response. You're free to implement none or
+    any of them.
+-   Below are the few of Spring framework class which uses Template Method
+    Design Pattern:
+    -   JdbcTemplate, HibernateTemplate, JmsTemplate, RestTemplate, SimpleJdbcTemplate,
+        TransactionTemplate.

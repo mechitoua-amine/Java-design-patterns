@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAO implements Cloneable {
+
     private static List<Student> studentList;
+
     static {
         studentList = new ArrayList<>();
 

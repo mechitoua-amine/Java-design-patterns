@@ -1,0 +1,25 @@
+# Mediator Design Pattern:
+
+The Mediator Pattern is one of the behavioural design patterns. It deals
+with the behaviouus of objects. Mediator is used to provide a centralized
+communication medium between different objects int the system.
+
+Mediator pattern is very helpful in an enterprise application where multiple
+objects are interaction with each other. If the objects interact directly
+, the system componenets are tightly coupled with each other, that makes
+higher maintainability cost and not hard to extend.
+Mediator pattern focuses on providing a mediator between objects for
+communication and help in implementing loose coupling between them.
+
+The system objects that communicate with each other are called Collegues.
+Usually an interface or abstract class provides the contract for communication
+and then we have concrete implementation of the mediator.
+
+Mediator is useful when the communication logic between objects is complex
+, we can have a central point of communication that takes care of its logic.
+
+# Examples of Mediator Pattern in JDK:
+
+-   java.util.Timer class scheduleXXX() methods.
+-   java Concurrency Excecutor execute() method.
+-   java.lang.reflect.Method invoke() method.

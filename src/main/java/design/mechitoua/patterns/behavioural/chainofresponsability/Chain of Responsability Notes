@@ -1,0 +1,40 @@
+# Chain Of Responsibility pattern:
+
+This pattern comes under the behavioural design pattern category.
+It is used to achieve loose coupling in software design where a
+request from a client is passed to a chain of objects for processing.
+Then the object in the chain will decide themselves who will be
+processing the request and whether the request is required to be
+sent to the next object in the chain or not.
+
+# Use Case:
+
+One of the great examples of chain of Responsibility pattern is
+the ATM machine. The ATM machine has a chain of dispense classes that
+can handle the requests. The dispense classes are responsible for
+dispensing the money. If the request cannot be handled by any of the
+dispense classes, then the request is passed to the next dispense
+class in the chain.
+
+The user enters the amount to be dispensed and the ATM machine dispense
+the amount in terms of defined currency.
+
+## Important Points
+
+-   Client doesn't know which part of the chain will be processing
+    the request and it will send it to the first object in the chain.
+-   Each object in the chain will have it's own implementation to
+    process the request, either full or partial or to send it to the
+    next object in the chain.
+-   Every object in the chain should have reference to the next object
+    to forward the request to, this is achieved by java composition.
+-   Creating chain carefully is very important otherwise there might be
+    a case that the request will never be forwarded to a particular
+    processor or there are no objects in the chain who are able to handle
+    the request.
+
+# Examples of the chain of responsible in the JDK:
+
+-   the catch mechanism in the try-catch block
+-   java.util.logging.Logger#log() method
+-   javax.servlet.Filter#doFilter() method

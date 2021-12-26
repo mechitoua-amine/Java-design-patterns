@@ -1,0 +1,19 @@
+# Strategy Desing Pattern:
+
+Strategy pattern is one of the behavioural design pattern, which is
+used when we need multiple algorithms for a specific task and the
+client decides which implementaion of the algorithm to use at runtime.
+
+Strategy is also known as Policy Pattern. We define multiple algorithms
+and let the client pass the algorithm to be used as parameter.
+
+One of the common use cases of Strategy pattern is to implement
+different sorting algorithms. For example, we can implement different
+sorting algorithms like Quick Sort, Merge Sort, Heap Sort etc.
+
+# Examples of Strategy Pattern in JDK:
+
+-   java.util.Collections#sort() method
+-   javax.servlet.http.HttpServlet#service() method, plus all the doXXX()
+    methods that accpet HttpServletRequest and HttpServletResponse.
+-   java.util.Comparator#compare() method

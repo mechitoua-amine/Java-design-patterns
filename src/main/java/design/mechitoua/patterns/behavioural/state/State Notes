@@ -1,0 +1,10 @@
+# State Design Pattern:
+The benefit of using State Pattern is to implement polymorphic behavior.
+The chances of error are less and it's very easy to add more states for
+additional behavior. Thus making our code more robust, easy to maintain
+and flexible.
+
+## Use case:
+Suppose we want to implement a AC remote with a simple button to perform
+action. If the state is ON, it will turn on the AC and if the state is OFF,
+it will turn off the AC.

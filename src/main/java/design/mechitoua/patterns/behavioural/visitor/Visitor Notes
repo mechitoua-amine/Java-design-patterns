@@ -1,0 +1,21 @@
+# Visitor Design Pattern:
+
+Visitor Design Pattern is one of the behavioral design patterns,
+it is used when we have to perform an oepration on a group of
+similar kinds of objects. With the help of Visitor Pattern, we
+can move the oepration logic from the objects to antoher class.
+
+The benefit of this pattern is that if the logic of oepration
+changes, then we need to make changes only in the visitor class
+rather than doing it in all the classes.
+
+Another benefit is that adding a new class to the system is easy
+, it will require changing the visitor inteface and the concrete
+class remains the same and will not be affected.
+
+# Example of Visitor Design Pattern in JDK:
+
+-   javax.lang.model.element.AnnotationValue and AnnotationVisitor
+-   javax.lang.model.element.Element and ElementVisitor
+-   javax.lang.model.type.TypeMirror and TypeVisitor
+-   java.nio.file.FileVisitor and SimpleFileVisitor

@@ -1,0 +1,21 @@
+# Iterator Desing Pattern
+
+The Iterator pattern is used to privide standard way to travese through
+a group of Objests. Iterator pattern is widely used in Java collections
+
+Framework.iterator interface profides methods for traversing through
+a collection.
+
+This pattern provides a way to access the elements of an aggregate object
+without exposing its underlying representation.
+
+Iterator Desing Pattern is not only about traversing through a collection
+, we can provide different kind of iterators based on our resquirments.
+
+Iterator Pattern hides the actual implementation of traversal through
+the collection and client program just use iterator methods.
+
+# Examples of Iterator Design Pattern in JDK
+
+-   All the implemetations of java.util.Iterator interface
+-   all implementations of java.util.Enumeration interface

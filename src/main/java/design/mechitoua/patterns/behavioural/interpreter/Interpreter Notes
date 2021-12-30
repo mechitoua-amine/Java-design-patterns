@@ -1,0 +1,15 @@
+# Interpreter Design Pattern:
+
+Interpreter Pattern is used to define a grammatical representation fo a
+language and provides an interpreter to deal with this grammar.
+
+The best example of interpreter pattern is the java compiler that
+interprets java source code into byte code that is understandable by JVM.
+
+Google translator is also an example of interpreter pattern where the
+input can be in any language and we can get the output interpreted in
+another language.
+
+# Examples of Interpreter Pattern in JDK:
+
+-   java.util.Pattern and subclasses of java.text.Format

@@ -1,0 +1,15 @@
+# Command Design Pattern:
+
+Command pattern is a data driven design pattern and falls under behavioral
+pattern category. It is used to encapsulate the request and the receiver of the
+request. The command pattern is used to decouple the invoker and the receiver
+of the request.
+
+A request is wrapped under an object as command and passed to invoker object.
+Invoker object looks for the appropriate object which can handle this command
+and pass it to the corresponding object which executes the command.
+
+# Examples of Command Pattern in JDK:
+
+-   All implementations of java.lang.Runnable interface
+-   All implementations of javax.swing.Action
